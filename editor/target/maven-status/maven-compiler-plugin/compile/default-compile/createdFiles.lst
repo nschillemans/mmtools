@@ -1,0 +1,16 @@
+be\nisc\modelmappertools\editor\gui\PropertyBox$Role.class
+be\nisc\modelmappertools\editor\gui\dialog\NewMappingDialog.class
+be\nisc\modelmappertools\editor\gui\Editor$1.class
+be\nisc\modelmappertools\editor\gui\Editor.class
+be\nisc\modelmappertools\editor\gui\dialog\AbstractClassChooserDialog.class
+be\nisc\modelmappertools\editor\gui\ClassPicker.class
+be\nisc\modelmappertools\editor\gui\Editor$2.class
+be\nisc\modelmappertools\editor\gui\Workspace.class
+be\nisc\modelmappertools\editor\gui\dialog\SetConverterDialog.class
+be\nisc\modelmappertools\editor\B.class
+be\nisc\modelmappertools\editor\gui\MappingConnector.class
+be\nisc\modelmappertools\editor\C.class
+be\nisc\modelmappertools\editor\MappingManager.class
+be\nisc\modelmappertools\editor\A.class
+be\nisc\modelmappertools\editor\gui\PropertyBox.class
+be\nisc\modelmappertools\editor\gui\Workspace$TestClassPicker.class
