@@ -1,16 +1,11 @@
 package be.nisc.modelmappertools.editor.gui.dialog;
 
 import javax.swing.*;
+import java.util.function.Supplier;
 
 public class AbstractClassChooserDialog extends JDialog {
 
-    private Object classPicker;
-
-    public AbstractClassChooserDialog(Object classPicker) {
-        this.classPicker = classPicker;
-    }
-
-    protected JTextField createChooser(JPanel target, String text, String classPickerMethod) {
+    protected JTextField createChooser(JPanel target, String text, Supplier<String> choiceSupplier) {
         JPanel chooser = new JPanel();
         chooser.setLayout(new BoxLayout(chooser, BoxLayout.LINE_AXIS));
 
@@ -27,14 +22,10 @@ public class AbstractClassChooserDialog extends JDialog {
         chooser.add(button);
 
         button.addActionListener(event -> {
-            try {
-                String choice = (String) classPicker.getClass().getMethod(classPickerMethod).invoke(classPicker);
+            String choice = choiceSupplier.get();
 
-                if (choice != null) {
-                    textField.setText(choice);
-                }
-            } catch (Exception e) {
-                throw new RuntimeException("Could not invoke classpicker method through reflection", e);
+            if (choice != null) {
+                textField.setText(choice);
             }
         });
 

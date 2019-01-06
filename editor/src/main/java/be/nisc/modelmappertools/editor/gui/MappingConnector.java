@@ -2,7 +2,9 @@ package be.nisc.modelmappertools.editor.gui;
 
 import be.nisc.modelmappertools.api.FieldMapping;
 
-public class MappingConnector {
+import java.io.Serializable;
+
+public class MappingConnector implements Serializable {
         private FieldMapping fieldMapping;
 
         public MappingConnector(FieldMapping fieldMapping) {

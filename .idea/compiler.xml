@@ -6,15 +6,16 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="modelmapper-tools (1)" />
-        <module name="modelmapper-tools (2)" />
-        <module name="modelmapper-tools (3)" />
-        <module name="sandbox-main" />
+        <module name="modelmapper-tools-api" />
+        <module name="modelmapper-tools-editor" />
+        <module name="modelmapper-tools-maven-plugin" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
-      <module name="sandbox-generated" target="1.8" />
-      <module name="sandbox-importing" target="1.8" />
+      <module name="modelmapper-tools-api" target="1.8" />
+      <module name="modelmapper-tools-editor" target="1.8" />
+      <module name="modelmapper-tools-master" target="1.8" />
+      <module name="modelmapper-tools-maven-plugin" target="1.8" />
     </bytecodeTargetLevel>
   </component>
 </project>

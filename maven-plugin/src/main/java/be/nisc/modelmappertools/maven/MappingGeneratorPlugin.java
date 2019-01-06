@@ -56,4 +56,28 @@ public class MappingGeneratorPlugin extends AbstractMojo {
             throw new RuntimeException(e);
         }
     }
+
+    public File getMappingsFile() {
+        return mappingsFile;
+    }
+
+    public void setMappingsFile(File mappingsFile) {
+        this.mappingsFile = mappingsFile;
+    }
+
+    public File getOutputFolder() {
+        return outputFolder;
+    }
+
+    public void setOutputFolder(File outputFolder) {
+        this.outputFolder = outputFolder;
+    }
+
+    public String getOutputPackageName() {
+        return outputPackageName;
+    }
+
+    public void setOutputPackageName(String outputPackageName) {
+        this.outputPackageName = outputPackageName;
+    }
 }

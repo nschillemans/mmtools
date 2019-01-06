@@ -1,9 +1,9 @@
-package be.nisc.modelmappertools.editor;
+package be.nisc.modelmappertools.maven.testclasses;
 
 public class B {
     private int a;
     private int b;
-    public Integer k;
+    private Integer k;
 
     public int getA() {
         return a;
@@ -19,5 +19,13 @@ public class B {
 
     public void setB(int b) {
         this.b = b;
+    }
+
+    public Integer getK() {
+        return k;
+    }
+
+    public void setK(Integer k) {
+        this.k = k;
     }
 }

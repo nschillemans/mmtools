@@ -1,9 +1,9 @@
-package be.nisc.modelmappertools.editor;
+package be.nisc.modelmappertools.maven.testclasses;
 
 public class D {
     private String hallo;
     private Integer hoi;
-    public D innerD;
+    private D innerD;
 
     public String getHallo() {
         return hallo;
@@ -19,5 +19,13 @@ public class D {
 
     public void setHoi(Integer hoi) {
         this.hoi = hoi;
+    }
+
+    public D getInnerD() {
+        return innerD;
+    }
+
+    public void setInnerD(D innerD) {
+        this.innerD = innerD;
     }
 }

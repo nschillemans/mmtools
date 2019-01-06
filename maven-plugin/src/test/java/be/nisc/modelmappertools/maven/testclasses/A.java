@@ -1,10 +1,10 @@
-package be.nisc.modelmappertools.editor;
+package be.nisc.modelmappertools.maven.testclasses;
 
 public class A {
     private String a;
     private String b;
     private String u;
-    public D whatever;
+    private D whatever;
 
     public String getA() {
         return a;
@@ -28,5 +28,13 @@ public class A {
 
     public void setU(String u) {
         this.u = u;
+    }
+
+    public D getWhatever() {
+        return whatever;
+    }
+
+    public void setWhatever(D whatever) {
+        this.whatever = whatever;
     }
 }

@@ -2,20 +2,19 @@ package be.nisc.modelmappertools.editor.gui;
 
 import be.nisc.modelmappertools.api.ClassMapping;
 import be.nisc.modelmappertools.api.FieldMapping;
-import be.nisc.modelmappertools.editor.FieldInfo;
-import be.nisc.modelmappertools.editor.MappingManager;
-import be.nisc.modelmappertools.editor.gui.dialog.SetConverterDialog;
+import be.nisc.modelmappertools.editor.gui.dialog.ButtonChoiceDialog;
+import be.nisc.modelmappertools.editor.gui.plugins.ClassPicker;
+import be.nisc.modelmappertools.editor.manager.FieldInfo;
+import be.nisc.modelmappertools.editor.manager.MappingManager;
 import com.mxgraph.model.mxCell;
 import com.mxgraph.swing.mxGraphComponent;
 import com.mxgraph.util.mxEvent;
 import com.mxgraph.util.mxEventObject;
-import com.mxgraph.util.mxPoint;
 import com.mxgraph.view.mxGraph;
 
 import javax.swing.*;
 import java.awt.*;
 import java.awt.event.*;
-import java.lang.reflect.Field;
 import java.util.HashMap;
 import java.util.Map;
 
@@ -24,15 +23,15 @@ public class Editor extends JPanel {
     private static final int FROM_X = 20, TO_X = 300;
 
     private boolean initializing = true;
-    private Object classPicker;
+    private ClassPicker classPicker;
     private MappingManager mappingManager;
     private Map<String, mxCell> fromVertices;
     private Map<String, mxCell> toVertices;
     private mxGraph graph;
 
-    public Editor(Object classPicker, ClassMapping classMapping) {
+    public Editor(ClassLoader classLoader, ClassPicker classPicker, ClassMapping classMapping) {
         this.classPicker = classPicker;
-        this.mappingManager = new MappingManager();
+        this.mappingManager = new MappingManager(classLoader);
         this.fromVertices = new HashMap<>();
         this.toVertices = new HashMap<>();
 
@@ -72,11 +71,24 @@ public class Editor extends JPanel {
                     mxCell clicked = (mxCell) graphComponent.getCellAt(e.getX(), e.getY());
 
                     if (clicked != null && clicked.isEdge()) {
-                        String converter = new SetConverterDialog(classPicker).prompt();
+                        MappingConnector mappingConnector = (MappingConnector) clicked.getValue();
 
-                        if (converter != null) {
-                            (((MappingConnector) clicked.getValue()).getFieldMapping()).converter = converter;
+                        int choice = 1;
+
+                        if (mappingConnector.getFieldMapping().converter != null) {
+                            choice = new ButtonChoiceDialog("Converter is present","Remove", "Replace", "Do nothing").prompt();
+                        }
+
+                        if (choice == 0) {
+                            (((MappingConnector) clicked.getValue()).getFieldMapping()).converter = null;
                             graph.refresh();
+                        } else if (choice == 1) {
+                            String converter = classPicker.chooseConverter();
+
+                            if (converter != null) {
+                                (((MappingConnector) clicked.getValue()).getFieldMapping()).converter = converter;
+                                graph.refresh();
+                            }
                         }
                     }
                 }
@@ -172,9 +184,12 @@ public class Editor extends JPanel {
             throw new RuntimeException("Is not an edge: " + edge);
         } else {
             FieldMapping fieldMapping = new FieldMapping();
-            fieldMapping.fromPath = new String[] {((PropertyBox) edge.getSource().getValue()).getPropertyName()};
-            fieldMapping.toPath = new String[] {((PropertyBox) edge.getTarget().getValue()).getPropertyName()};
+            fieldMapping.fromPath = ((PropertyBox) edge.getSource().getValue()).getPropertyName();
+            fieldMapping.fromAccessPath = ((PropertyBox) edge.getSource().getValue()).getAccessPath();
+            fieldMapping.toPath = ((PropertyBox) edge.getTarget().getValue()).getPropertyName();
             fieldMapping.toType = ((PropertyBox) edge.getTarget().getValue()).getType().getCanonicalName();
+            fieldMapping.toAccessPath = ((PropertyBox) edge.getTarget().getValue()).getAccessPath();
+
             return fieldMapping;
         }
     }
@@ -206,7 +221,7 @@ public class Editor extends JPanel {
         int displayed = 0;
 
         for (FieldInfo fi : fieldInfoList) {
-            mxCell fromVertex = (mxCell) graph.insertVertex(graph.getDefaultParent(), null, new PropertyBox(fi.path, fi.type, role), xStart, yStart + displayed++ * 50, 80, 30);
+            mxCell fromVertex = (mxCell) graph.insertVertex(graph.getDefaultParent(), null, new PropertyBox(fi.path, fi.type, fi.accessPath, role), xStart, yStart + displayed++ * 50, 80, 30);
             vertexMap.put(fi.path, fromVertex);
 
             if (fi.contained != null) {
@@ -220,7 +235,7 @@ public class Editor extends JPanel {
     private void drawMappings() {
         for (FieldMapping mapping : this.mappingManager.getFieldMappings()) {
             if (mapping.active) {
-                graph.insertEdge(graph.getDefaultParent(), null, new MappingConnector(mapping), fromVertices.get(mapping.fromPath[0]), toVertices.get(mapping.toPath[0]));
+                graph.insertEdge(graph.getDefaultParent(), null, new MappingConnector(mapping), fromVertices.get(mapping.fromPath), toVertices.get(mapping.toPath));
             }
         }
     }
