@@ -1,40 +1,42 @@
 package be.nisc.modelmappertools.editor.gui;
 
-import be.nisc.modelmappertools.api.ClassMapping;
+import be.nisc.modelmappertools.editor.api.ClassMapping;
 import be.nisc.modelmappertools.editor.gui.plugins.ClassPicker;
-import be.nisc.modelmappertools.editor.gui.plugins.SaveHandler;
-import com.fasterxml.jackson.core.JsonProcessingException;
-import com.fasterxml.jackson.databind.ObjectMapper;
+import be.nisc.modelmappertools.editor.manager.MappingClassGenerator;
+import be.nisc.modelmappertools.editor.manager.MappingManager;
 
 import javax.swing.*;
-import java.awt.*;
 import java.io.File;
-import java.io.IOException;
-import java.nio.file.Files;
 import java.util.ArrayList;
 import java.util.List;
 
 public class Workspace extends JPanel {
 
     private ClassLoader mappingClassLoader;
-    private ObjectMapper objectMapper = new ObjectMapper();
     private ClassPicker classPicker;
-    private SaveHandler saveHandler;
     private JTabbedPane tabbedPane;
-    private File file;
+    private String mappingClass;
 
-    public Workspace(ClassLoader mappingClassLoader, ClassPicker classPicker, SaveHandler saveHandler, File file) {
+    public Workspace(ClassLoader mappingClassLoader, ClassPicker classPicker, File outputFile, String mappingClass) {
         this.mappingClassLoader = mappingClassLoader;
         this.classPicker = classPicker;
-        this.saveHandler = saveHandler;
-        this.file = file;
+        this.mappingClass = mappingClass;
 
         setLayout(new BoxLayout(this, BoxLayout.PAGE_AXIS));
 
         // Menu
         JButton saveButton = new JButton();
         saveButton.setText("Save");
-        saveButton.addActionListener((event) -> this.saveHandler.save(serializeMappings()));
+        saveButton.addActionListener((event) -> {
+            List<ClassMapping> classMappings = new ArrayList<>();
+
+            for (int c = 0; c < this.tabbedPane.getTabCount(); c++) {
+                Editor editor = ((Editor) this.tabbedPane.getComponent(c));
+                classMappings.add(editor.getMapping());
+            }
+
+            new MappingClassGenerator(mappingClassLoader).write(outputFile, classMappings);
+        });
 
         JButton addButton = new JButton();
         addButton.setText("Add");
@@ -46,16 +48,8 @@ public class Workspace extends JPanel {
                 to = classPicker.chooseMappingClass("Create mapping to...");
             }
 
-            ClassMapping classMapping = null;
-
             if (to != null) {
-                classMapping = new ClassMapping();
-                classMapping.from = from;
-                classMapping.to = to;
-            }
-
-            if (classMapping != null) {
-                addEditor(classMapping);
+                addEditor(null, from, to);
             }
         });
 
@@ -82,52 +76,28 @@ public class Workspace extends JPanel {
 
     public void start() {
         try {
-            List<ClassMapping> mappings = objectMapper.readValue(file, objectMapper.getTypeFactory().constructCollectionLikeType(ArrayList.class, ClassMapping.class));
-            mappings.stream().forEach(mapping -> addEditor(mapping));
-        } catch (IOException e) {
+            MappingManager.getAvailableClassMappings(mappingClassLoader, mappingClass)
+                    .forEach(mapping -> addEditor(mappingClass, mapping.from, mapping.to));
+        } catch (Exception e) {
             throw new RuntimeException("Could not parse mappings file", e);
         }
     }
 
-    private String serializeMappings() {
-        List<ClassMapping> mappings = new ArrayList<>();
-
-        for (Component editor : this.tabbedPane.getComponents()) {
-            mappings.add(((Editor) editor).getMapping());
-        }
-
-        try {
-            return objectMapper.writeValueAsString(mappings);
-        } catch (JsonProcessingException e) {
-            throw new RuntimeException("Could not serialize mappings", e);
-        }
-    }
-
-    private void addEditor(ClassMapping mapping) {
+    private void addEditor(String mappingClass, String fromClass, String toClass) {
         int existingEditorTabIndex = -1;
 
         for (int c = 0; c < this.tabbedPane.getTabCount(); c++) {
-            ClassMapping existingMapping = ((Editor) this.tabbedPane.getComponent(c)).getMapping();
+            Editor existingEditor = ((Editor) this.tabbedPane.getComponent(c));
 
-            if (existingMapping.from.equals(mapping.from) && existingMapping.to.equals(mapping.to)) {
+            if (existingEditor.getFromClass().equals(fromClass) && existingEditor.getToClass().equals(toClass)) {
                 existingEditorTabIndex = c;
                 break;
             }
         }
 
         if (existingEditorTabIndex == -1) {
-            Class fromClass;
-            Class toClass;
-
-            try {
-                fromClass = this.mappingClassLoader.loadClass(mapping.from);
-                toClass = this.mappingClassLoader.loadClass(mapping.to);
-            } catch (Exception e) {
-                throw new RuntimeException("Could not load specified classes", e);
-            }
-
-            Editor editor = new Editor(mappingClassLoader, classPicker, mapping);
-            tabbedPane.addTab(fromClass.getSimpleName() + " -> " + toClass.getSimpleName(), editor);
+            Editor editor = new Editor(mappingClassLoader, classPicker, mappingClass, fromClass, toClass);
+            tabbedPane.addTab(fromClass + " -> " + toClass, editor);
             tabbedPane.setSelectedIndex(tabbedPane.getTabCount() - 1);
         } else {
             tabbedPane.setSelectedIndex(existingEditorTabIndex);
@@ -135,7 +105,7 @@ public class Workspace extends JPanel {
     }
 
     public static void main(String[] args) {
-        Workspace frame = new Workspace(Workspace.class.getClassLoader(), new TestClassPicker(), new TestSaveHandler(), new File("F:\\Dev\\Java\\Projects\\mmtools\\editor\\src\\main\\resources\\mappings.json"));
+        Workspace frame = new Workspace(Workspace.class.getClassLoader(), new TestClassPicker(), new File("F:\\Dev\\Java\\Projects\\mmtools\\editor\\src\\main\\java\\be\\nisc\\modelmappertools\\editor\\test\\ModelMapperMappings.java"), "be.nisc.modelmappertools.editor.test.ModelMapperMappings");
 
         JFrame window = new JFrame();
         window.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
@@ -146,17 +116,6 @@ public class Workspace extends JPanel {
         frame.start();
     }
 
-    public static class TestSaveHandler implements SaveHandler {
-        @Override
-        public void save(String output) {
-            try {
-                Files.write(new File("F:\\Dev\\Java\\Projects\\mmtools\\editor\\src\\main\\resources\\mappings.json").toPath(), output.getBytes());
-            } catch (IOException e) {
-                e.printStackTrace();
-            }
-        }
-    }
-
     public static class TestClassPicker implements ClassPicker {
 
         private int c = 0;
@@ -164,15 +123,15 @@ public class Workspace extends JPanel {
         @Override
         public String chooseMappingClass(String hint) {
             if (c++ == 0) {
-                return "be.nisc.modelmappertools.editor.A";
+                return "be.nisc.modelmappertools.editor.test.A";
             } else {
-                return "be.nisc.modelmappertools.editor.B";
+                return "be.nisc.modelmappertools.editor.test.C";
             }
         }
 
         @Override
         public String chooseConverter() {
-            return "be.nisc.modelmappertools.maven.testClasses.MyConverter";
+            return "be.nisc.modelmappertools.editor.test.MyConverter";
         }
     };
 }

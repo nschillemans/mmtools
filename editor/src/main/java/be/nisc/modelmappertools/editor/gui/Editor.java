@@ -1,7 +1,7 @@
 package be.nisc.modelmappertools.editor.gui;
 
-import be.nisc.modelmappertools.api.ClassMapping;
-import be.nisc.modelmappertools.api.FieldMapping;
+import be.nisc.modelmappertools.editor.api.ClassMapping;
+import be.nisc.modelmappertools.editor.api.FieldMapping;
 import be.nisc.modelmappertools.editor.gui.dialog.ButtonChoiceDialog;
 import be.nisc.modelmappertools.editor.gui.plugins.ClassPicker;
 import be.nisc.modelmappertools.editor.manager.FieldInfo;
@@ -28,8 +28,11 @@ public class Editor extends JPanel {
     private Map<String, mxCell> fromVertices;
     private Map<String, mxCell> toVertices;
     private mxGraph graph;
+    private String fromClass, toClass;
 
-    public Editor(ClassLoader classLoader, ClassPicker classPicker, ClassMapping classMapping) {
+    public Editor(ClassLoader classLoader, ClassPicker classPicker, String mappingsClass, String fromClass, String toClass) {
+        this.fromClass = fromClass;
+        this.toClass = toClass;
         this.classPicker = classPicker;
         this.mappingManager = new MappingManager(classLoader);
         this.fromVertices = new HashMap<>();
@@ -139,7 +142,7 @@ public class Editor extends JPanel {
             }
         });
 
-        mappingManager.load(classMapping);
+        mappingManager.load(mappingsClass, fromClass, toClass);
         initializeField();
 
         setLayout(new BorderLayout());
@@ -175,6 +178,14 @@ public class Editor extends JPanel {
         initializing = false;
     }
 
+    public String getFromClass() {
+        return fromClass;
+    }
+
+    public String getToClass() {
+        return toClass;
+    }
+
     public ClassMapping getMapping() {
         return mappingManager.getOutput();
     }
@@ -185,7 +196,7 @@ public class Editor extends JPanel {
         } else {
             FieldMapping fieldMapping = new FieldMapping();
             fieldMapping.fromPath = ((PropertyBox) edge.getSource().getValue()).getPropertyName();
-            fieldMapping.fromAccessPath = ((PropertyBox) edge.getSource().getValue()).getAccessPath();
+            fieldMapping.toAccessPath = ((PropertyBox) edge.getSource().getValue()).getAccessPath();
             fieldMapping.toPath = ((PropertyBox) edge.getTarget().getValue()).getPropertyName();
             fieldMapping.toType = ((PropertyBox) edge.getTarget().getValue()).getType().getCanonicalName();
             fieldMapping.toAccessPath = ((PropertyBox) edge.getTarget().getValue()).getAccessPath();

@@ -8,7 +8,7 @@
         <outputRelativeToContentRoot value="true" />
         <module name="modelmapper-tools-api" />
         <module name="modelmapper-tools-editor" />
-        <module name="modelmapper-tools-maven-plugin" />
+        <module name="sandbox-main" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
@@ -16,6 +16,8 @@
       <module name="modelmapper-tools-editor" target="1.8" />
       <module name="modelmapper-tools-master" target="1.8" />
       <module name="modelmapper-tools-maven-plugin" target="1.8" />
+      <module name="sandbox" target="1.8" />
+      <module name="sandbox-main" target="1.8" />
     </bytecodeTargetLevel>
   </component>
 </project>

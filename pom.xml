@@ -17,7 +17,6 @@
     <modules>
         <module>api</module>
         <module>editor</module>
-        <module>maven-plugin</module>
     </modules>
 
 </project>

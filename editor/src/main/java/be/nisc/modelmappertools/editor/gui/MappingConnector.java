@@ -1,6 +1,6 @@
 package be.nisc.modelmappertools.editor.gui;
 
-import be.nisc.modelmappertools.api.FieldMapping;
+import be.nisc.modelmappertools.editor.api.FieldMapping;
 
 import java.io.Serializable;
 

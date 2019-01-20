@@ -1,7 +1,5 @@
 package be.nisc.modelmappertools.editor.gui;
 
-import be.nisc.modelmappertools.api.FieldMapping;
-
 import java.io.Serializable;
 
 public class PropertyBox implements Serializable {

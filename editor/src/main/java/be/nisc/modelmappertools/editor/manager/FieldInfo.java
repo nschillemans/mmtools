@@ -1,7 +1,5 @@
 package be.nisc.modelmappertools.editor.manager;
 
-import be.nisc.modelmappertools.api.FieldMapping;
-
 import java.util.List;
 
 public class FieldInfo {

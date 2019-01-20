@@ -1,45 +1,43 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="9b63f3b8-c637-4f9e-bdce-772c4ee71a90" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/editor/src/main/java/be/nisc/modelmappertools/editor/gui/dialog/ButtonChoiceDialog.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/maven-plugin/src/test/java/be/nisc/modelmappertools/maven/MappingGeneratorPluginTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/maven-plugin/src/test/java/be/nisc/modelmappertools/maven/testclasses/A.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/maven-plugin/src/test/java/be/nisc/modelmappertools/maven/testclasses/B.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/maven-plugin/src/test/java/be/nisc/modelmappertools/maven/testclasses/D.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/maven-plugin/src/test/java/be/nisc/modelmappertools/maven/testclasses/MyConverter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/maven-plugin/src/test/resources/mappings.json" afterDir="false" />
+    <list default="true" id="9b63f3b8-c637-4f9e-bdce-772c4ee71a90" name="Default" comment="Refa">
+      <change afterPath="$PROJECT_DIR$/api/src/main/java/be/nisc/modelmappertools/api/ModelMapperMappings.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/editor/src/main/java/be/nisc/modelmappertools/editor/manager/InvocationUtils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/editor/src/main/java/be/nisc/modelmappertools/editor/manager/MappingClassGenerator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/editor/src/main/java/be/nisc/modelmappertools/editor/test/A.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/editor/src/main/java/be/nisc/modelmappertools/editor/test/B.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/editor/src/main/java/be/nisc/modelmappertools/editor/test/C.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/editor/src/main/java/be/nisc/modelmappertools/editor/test/ModelMapperMappings.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/src/main/java/be/nisc/modelmappertools/api/ClassMapping.java" beforeDir="false" afterPath="$PROJECT_DIR$/api/src/main/java/be/nisc/modelmappertools/api/ClassMapping.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/src/main/java/be/nisc/modelmappertools/api/FieldMapping.java" beforeDir="false" afterPath="$PROJECT_DIR$/api/src/main/java/be/nisc/modelmappertools/api/FieldMapping.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/target/classes/be/nisc/modelmappertools/api/ClassMapping.class" beforeDir="false" afterPath="$PROJECT_DIR$/api/target/classes/be/nisc/modelmappertools/api/ClassMapping.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/target/classes/be/nisc/modelmappertools/api/FieldMapping.class" beforeDir="false" afterPath="$PROJECT_DIR$/api/target/classes/be/nisc/modelmappertools/api/FieldMapping.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/src/main/java/be/nisc/modelmappertools/api/ClassMapping.java" beforeDir="false" afterPath="$PROJECT_DIR$/editor/src/main/java/be/nisc/modelmappertools/editor/api/ClassMapping.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/src/main/java/be/nisc/modelmappertools/api/FieldMapping.java" beforeDir="false" afterPath="$PROJECT_DIR$/editor/src/main/java/be/nisc/modelmappertools/editor/api/FieldMapping.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/target/classes/be/nisc/modelmappertools/api/ClassMapping.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/target/classes/be/nisc/modelmappertools/api/FieldMapping.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/api/target/maven-archiver/pom.properties" beforeDir="false" afterPath="$PROJECT_DIR$/api/target/maven-archiver/pom.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/api/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/api/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/api/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/api/target/modelmapper-tools-api-1.0.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/api/target/modelmapper-tools-api-1.0.0-SNAPSHOT.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/editor/src/main/java/be/nisc/modelmappertools/editor/A.java" beforeDir="false" afterPath="$PROJECT_DIR$/editor/src/main/java/be/nisc/modelmappertools/editor/A.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/editor/src/main/java/be/nisc/modelmappertools/editor/B.java" beforeDir="false" afterPath="$PROJECT_DIR$/editor/src/main/java/be/nisc/modelmappertools/editor/B.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/editor/src/main/java/be/nisc/modelmappertools/editor/C.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/editor/src/main/java/be/nisc/modelmappertools/editor/D.java" beforeDir="false" afterPath="$PROJECT_DIR$/editor/src/main/java/be/nisc/modelmappertools/editor/D.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/editor/src/main/java/be/nisc/modelmappertools/editor/FieldInfo.java" beforeDir="false" afterPath="$PROJECT_DIR$/editor/src/main/java/be/nisc/modelmappertools/editor/manager/FieldInfo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/editor/src/main/java/be/nisc/modelmappertools/editor/MappingManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/editor/src/main/java/be/nisc/modelmappertools/editor/manager/MappingManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/editor/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/editor/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/editor/src/main/java/be/nisc/modelmappertools/editor/A.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/editor/src/main/java/be/nisc/modelmappertools/editor/B.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/editor/src/main/java/be/nisc/modelmappertools/editor/D.java" beforeDir="false" afterPath="$PROJECT_DIR$/editor/src/main/java/be/nisc/modelmappertools/editor/test/D.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/editor/src/main/java/be/nisc/modelmappertools/editor/gui/Editor.java" beforeDir="false" afterPath="$PROJECT_DIR$/editor/src/main/java/be/nisc/modelmappertools/editor/gui/Editor.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/editor/src/main/java/be/nisc/modelmappertools/editor/gui/MappingConnector.java" beforeDir="false" afterPath="$PROJECT_DIR$/editor/src/main/java/be/nisc/modelmappertools/editor/gui/MappingConnector.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/editor/src/main/java/be/nisc/modelmappertools/editor/gui/PropertyBox.java" beforeDir="false" afterPath="$PROJECT_DIR$/editor/src/main/java/be/nisc/modelmappertools/editor/gui/PropertyBox.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/editor/src/main/java/be/nisc/modelmappertools/editor/gui/Workspace.java" beforeDir="false" afterPath="$PROJECT_DIR$/editor/src/main/java/be/nisc/modelmappertools/editor/gui/Workspace.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/editor/src/main/java/be/nisc/modelmappertools/editor/gui/dialog/AbstractClassChooserDialog.java" beforeDir="false" afterPath="$PROJECT_DIR$/editor/src/main/java/be/nisc/modelmappertools/editor/gui/dialog/AbstractClassChooserDialog.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/editor/src/main/java/be/nisc/modelmappertools/editor/gui/dialog/NewMappingDialog.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/editor/src/main/java/be/nisc/modelmappertools/editor/gui/dialog/SetConverterDialog.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/editor/src/main/java/be/nisc/modelmappertools/editor/gui/plugins/ClassPicker.java" beforeDir="false" afterPath="$PROJECT_DIR$/editor/src/main/java/be/nisc/modelmappertools/editor/gui/plugins/ClassPicker.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/editor/src/main/resources/mappings.json" beforeDir="false" afterPath="$PROJECT_DIR$/editor/src/main/resources/mappings.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/editor/src/main/java/be/nisc/modelmappertools/editor/gui/plugins/SaveHandler.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/editor/src/main/java/be/nisc/modelmappertools/editor/manager/FieldInfo.java" beforeDir="false" afterPath="$PROJECT_DIR$/editor/src/main/java/be/nisc/modelmappertools/editor/manager/FieldInfo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/editor/src/main/java/be/nisc/modelmappertools/editor/manager/MappingManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/editor/src/main/java/be/nisc/modelmappertools/editor/manager/MappingManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/editor/src/main/resources/mappings.json" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/editor/target/classes/be/nisc/modelmappertools/api/ClassMapping.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/editor/target/classes/be/nisc/modelmappertools/api/FieldMapping.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/editor/target/classes/be/nisc/modelmappertools/editor/A.class" beforeDir="false" afterPath="$PROJECT_DIR$/editor/target/classes/be/nisc/modelmappertools/editor/A.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/editor/target/classes/be/nisc/modelmappertools/editor/B.class" beforeDir="false" afterPath="$PROJECT_DIR$/editor/target/classes/be/nisc/modelmappertools/editor/B.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/editor/target/classes/be/nisc/modelmappertools/editor/A.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/editor/target/classes/be/nisc/modelmappertools/editor/B.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/editor/target/classes/be/nisc/modelmappertools/editor/C.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/editor/target/classes/be/nisc/modelmappertools/editor/D.class" beforeDir="false" afterPath="$PROJECT_DIR$/editor/target/classes/be/nisc/modelmappertools/editor/D.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/editor/target/classes/be/nisc/modelmappertools/editor/D.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/editor/target/classes/be/nisc/modelmappertools/editor/FieldInfo.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/editor/target/classes/be/nisc/modelmappertools/editor/MappingManager.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/editor/target/classes/be/nisc/modelmappertools/editor/gui/Editor$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/editor/target/classes/be/nisc/modelmappertools/editor/gui/Editor$1.class" afterDir="false" />
@@ -50,33 +48,44 @@
       <change beforePath="$PROJECT_DIR$/editor/target/classes/be/nisc/modelmappertools/editor/gui/PropertyBox$Role.class" beforeDir="false" afterPath="$PROJECT_DIR$/editor/target/classes/be/nisc/modelmappertools/editor/gui/PropertyBox$Role.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/editor/target/classes/be/nisc/modelmappertools/editor/gui/PropertyBox.class" beforeDir="false" afterPath="$PROJECT_DIR$/editor/target/classes/be/nisc/modelmappertools/editor/gui/PropertyBox.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/editor/target/classes/be/nisc/modelmappertools/editor/gui/Workspace$TestClassPicker.class" beforeDir="false" afterPath="$PROJECT_DIR$/editor/target/classes/be/nisc/modelmappertools/editor/gui/Workspace$TestClassPicker.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/editor/target/classes/be/nisc/modelmappertools/editor/gui/Workspace$TestSaveHandler.class" beforeDir="false" afterPath="$PROJECT_DIR$/editor/target/classes/be/nisc/modelmappertools/editor/gui/Workspace$TestSaveHandler.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/editor/target/classes/be/nisc/modelmappertools/editor/gui/Workspace$TestSaveHandler.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/editor/target/classes/be/nisc/modelmappertools/editor/gui/Workspace.class" beforeDir="false" afterPath="$PROJECT_DIR$/editor/target/classes/be/nisc/modelmappertools/editor/gui/Workspace.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/editor/target/classes/be/nisc/modelmappertools/editor/gui/dialog/AbstractClassChooserDialog.class" beforeDir="false" afterPath="$PROJECT_DIR$/editor/target/classes/be/nisc/modelmappertools/editor/gui/dialog/AbstractClassChooserDialog.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/editor/target/classes/be/nisc/modelmappertools/editor/gui/dialog/NewMappingDialog.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/editor/target/classes/be/nisc/modelmappertools/editor/gui/dialog/SetConverterDialog.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/editor/target/classes/be/nisc/modelmappertools/editor/gui/plugins/ClassPicker.class" beforeDir="false" afterPath="$PROJECT_DIR$/editor/target/classes/be/nisc/modelmappertools/editor/gui/plugins/ClassPicker.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/editor/target/classes/mappings.json" beforeDir="false" afterPath="$PROJECT_DIR$/editor/target/classes/mappings.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/editor/target/classes/be/nisc/modelmappertools/editor/gui/plugins/SaveHandler.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/editor/target/classes/mappings.json" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/editor/target/maven-archiver/pom.properties" beforeDir="false" afterPath="$PROJECT_DIR$/editor/target/maven-archiver/pom.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/editor/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/editor/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/editor/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/editor/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/editor/target/modelmapper-tools-editor-1.0.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/editor/target/modelmapper-tools-editor-1.0.0-SNAPSHOT.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/maven-plugin/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/maven-plugin/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/maven-plugin/src/main/java/be/nisc/modelmappertools/maven/MappingGenerator.java" beforeDir="false" afterPath="$PROJECT_DIR$/maven-plugin/src/main/java/be/nisc/modelmappertools/maven/MappingGenerator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/maven-plugin/src/main/java/be/nisc/modelmappertools/maven/MappingGeneratorPlugin.java" beforeDir="false" afterPath="$PROJECT_DIR$/maven-plugin/src/main/java/be/nisc/modelmappertools/maven/MappingGeneratorPlugin.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/maven-plugin/target/classes/META-INF/maven/be.nisc/modelmapper-tools-maven-plugin/plugin-help.xml" beforeDir="false" afterPath="$PROJECT_DIR$/maven-plugin/target/classes/META-INF/maven/be.nisc/modelmapper-tools-maven-plugin/plugin-help.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/maven-plugin/target/classes/META-INF/maven/plugin.xml" beforeDir="false" afterPath="$PROJECT_DIR$/maven-plugin/target/classes/META-INF/maven/plugin.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/maven-plugin/target/classes/be/nisc/modelmappertools/maven/MappingGenerator.class" beforeDir="false" afterPath="$PROJECT_DIR$/maven-plugin/target/classes/be/nisc/modelmappertools/maven/MappingGenerator.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/maven-plugin/target/classes/be/nisc/modelmappertools/maven/MappingGeneratorPlugin.class" beforeDir="false" afterPath="$PROJECT_DIR$/maven-plugin/target/classes/be/nisc/modelmappertools/maven/MappingGeneratorPlugin.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/maven-plugin/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/maven-plugin/src/main/java/be/nisc/modelmappertools/maven/MappingGenerator.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/maven-plugin/src/main/java/be/nisc/modelmappertools/maven/MappingGeneratorPlugin.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/maven-plugin/src/test/java/be/nisc/modelmappertools/maven/MappingGeneratorPluginTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/maven-plugin/src/test/java/be/nisc/modelmappertools/maven/testclasses/A.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/maven-plugin/src/test/java/be/nisc/modelmappertools/maven/testclasses/B.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/maven-plugin/src/test/java/be/nisc/modelmappertools/maven/testclasses/D.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/maven-plugin/src/test/java/be/nisc/modelmappertools/maven/testclasses/MyConverter.java" beforeDir="false" afterPath="$PROJECT_DIR$/editor/src/main/java/be/nisc/modelmappertools/editor/test/MyLittleConverter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/maven-plugin/src/test/resources/mappings.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/maven-plugin/target/classes/META-INF/maven/be.nisc/modelmapper-tools-maven-plugin/plugin-help.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/maven-plugin/target/classes/META-INF/maven/plugin.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/maven-plugin/target/classes/be/nisc/modelmappertools/maven/MappingGenerator.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/maven-plugin/target/classes/be/nisc/modelmappertools/maven/MappingGeneratorPlugin.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/maven-plugin/target/maven-archiver/pom.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/maven-plugin/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/maven-plugin/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/maven-plugin/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/maven-plugin/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/maven-plugin/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/maven-plugin/target/modelmapper-tools-maven-plugin-1.0.0-SNAPSHOT.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/modelmappertools.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <ignored path="$PROJECT_DIR$/api/target/" />
     <ignored path="$PROJECT_DIR$/maven-plugin/target/" />
     <ignored path="$PROJECT_DIR$/editor/target/" />
+    <ignored path="$PROJECT_DIR$/../sandbox/main/target/" />
+    <ignored path="$PROJECT_DIR$/../sandbox/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -89,49 +98,8 @@
       <file leaf-file-name="Workspace.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/editor/src/main/java/be/nisc/modelmappertools/editor/gui/Workspace.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="522">
-              <caret line="174" column="47" selection-start-line="174" selection-start-column="47" selection-end-line="174" selection-end-column="47" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Editor.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/editor/src/main/java/be/nisc/modelmappertools/editor/gui/Editor.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="270">
-              <caret line="223" column="141" selection-start-line="223" selection-start-column="141" selection-end-line="223" selection-end-column="141" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="MappingManager.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/editor/src/main/java/be/nisc/modelmappertools/editor/manager/MappingManager.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="357">
-              <caret line="30" column="37" selection-start-line="30" selection-start-column="26" selection-end-line="30" selection-end-column="37" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#3997#3998#0" expanded="true" />
-                <element signature="e#4074#4075#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="mappings.json" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/editor/src/main/resources/mappings.json">
-          <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret column="759" selection-start-column="759" selection-end-column="759" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="MappingGeneratorPluginTest.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/maven-plugin/src/test/java/be/nisc/modelmappertools/maven/MappingGeneratorPluginTest.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="726">
-              <caret line="70" column="66" selection-start-line="70" selection-start-column="66" selection-end-line="70" selection-end-column="66" />
+            <state relative-caret-position="2057">
+              <caret line="129" column="9" selection-start-line="129" selection-start-column="9" selection-end-line="129" selection-end-column="9" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -139,77 +107,119 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="MyConverter.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/maven-plugin/src/test/java/be/nisc/modelmappertools/maven/testclasses/MyConverter.java">
+      <file leaf-file-name="ModelMapperMappings.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/editor/src/main/java/be/nisc/modelmappertools/editor/test/ModelMapperMappings.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="136">
-              <caret line="8" column="36" selection-start-line="8" selection-start-column="36" selection-end-line="8" selection-end-column="36" />
+            <state relative-caret-position="510">
+              <caret line="39" column="88" selection-start-line="39" selection-start-column="88" selection-end-line="39" selection-end-column="88" />
               <folding>
                 <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="A.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/maven-plugin/src/test/java/be/nisc/modelmappertools/maven/testclasses/A.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="476">
-              <caret line="32" column="28" selection-start-line="32" selection-start-column="28" selection-end-line="32" selection-end-column="28" />
-              <folding>
-                <element signature="e#297#298#0" expanded="true" />
-                <element signature="e#321#322#0" expanded="true" />
-                <element signature="e#355#356#0" expanded="true" />
-                <element signature="e#381#382#0" expanded="true" />
-                <element signature="e#409#410#0" expanded="true" />
-                <element signature="e#433#434#0" expanded="true" />
-                <element signature="e#467#468#0" expanded="true" />
-                <element signature="e#493#494#0" expanded="true" />
-                <element signature="e#555#556#0" expanded="true" />
-                <element signature="e#598#599#0" expanded="true" />
-                <element signature="e#638#639#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="B.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/maven-plugin/src/test/java/be/nisc/modelmappertools/maven/testclasses/B.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="323">
-              <caret line="23" column="27" selection-start-line="23" selection-start-column="27" selection-end-line="23" selection-end-column="27" />
-              <folding>
-                <element signature="e#153#154#0" expanded="true" />
-                <element signature="e#177#178#0" expanded="true" />
-                <element signature="e#208#209#0" expanded="true" />
-                <element signature="e#234#235#0" expanded="true" />
-                <element signature="e#394#395#0" expanded="true" />
-                <element signature="e#429#430#0" expanded="true" />
-                <element signature="e#455#456#0" expanded="true" />
+                <element signature="e#1138#1139#0" expanded="true" />
+                <element signature="e#1174#1175#0" expanded="true" />
+                <element signature="e#1277#1278#0" expanded="true" />
+                <element signature="e#1315#1316#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file leaf-file-name="D.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/maven-plugin/src/test/java/be/nisc/modelmappertools/maven/testclasses/D.java">
+        <entry file="file://$PROJECT_DIR$/editor/src/main/java/be/nisc/modelmappertools/editor/test/D.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="23" column="26" selection-start-line="23" selection-start-column="26" selection-end-line="23" selection-end-column="26" />
+            <state relative-caret-position="153">
+              <caret line="11" column="16" selection-start-line="11" selection-start-column="16" selection-end-line="11" selection-end-column="16" />
               <folding>
-                <element signature="e#460#461#0" expanded="true" />
-                <element signature="e#499#500#0" expanded="true" />
-                <element signature="e#535#536#0" expanded="true" />
+                <element signature="e#236#237#0" expanded="true" />
+                <element signature="e#270#271#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="mappings.json" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/maven-plugin/src/test/resources/mappings.json">
+      <file leaf-file-name="FieldMapping.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/editor/src/main/java/be/nisc/modelmappertools/editor/api/FieldMapping.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="119">
+              <caret line="8" column="34" selection-start-line="8" selection-start-column="18" selection-end-line="8" selection-end-column="34" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ClassMapping.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/editor/src/main/java/be/nisc/modelmappertools/editor/api/ClassMapping.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="68">
+              <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="B.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/editor/src/main/java/be/nisc/modelmappertools/editor/test/B.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="34">
+              <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="MappingManager.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/editor/src/main/java/be/nisc/modelmappertools/editor/manager/MappingManager.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1173">
+              <caret line="77" selection-start-line="77" selection-end-line="77" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name=".gitignore" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/.gitignore">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="34">
+              <caret line="2" column="8" selection-start-line="2" selection-start-column="8" selection-end-line="2" selection-end-column="8" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="MappingClassGenerator.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/editor/src/main/java/be/nisc/modelmappertools/editor/manager/MappingClassGenerator.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1683">
+              <caret line="121" column="44" selection-start-line="121" selection-start-column="44" selection-end-line="121" selection-end-column="44" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ModelMapperMappings.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/../sandbox/main/src/main/java/be/nisc/sandbox/ModelMapperMappings.java">
           <provider selected="true" editor-type-id="text-editor">
             <state>
-              <caret column="475" selection-start-column="475" selection-end-column="475" />
+              <caret column="23" selection-start-column="8" selection-end-column="23" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#409#410#0" expanded="true" />
+                <element signature="e#466#467#0" expanded="true" />
+                <element signature="e#1194#1195#0" expanded="true" />
+                <element signature="e#1230#1231#0" expanded="true" />
+                <element signature="e#1333#1334#0" expanded="true" />
+                <element signature="e#1371#1372#0" expanded="true" />
+                <element signature="e#1512#1513#0" expanded="true" />
+                <element signature="e#1551#1552#0" expanded="true" />
+                <element signature="e#1654#1655#0" expanded="true" />
+                <element signature="e#1692#1693#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -220,6 +230,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Class" />
+        <option value="Interface" />
       </list>
     </option>
   </component>
@@ -234,6 +245,7 @@
       <find>FIELD</find>
       <find>map</find>
       <find>map(</find>
+      <find>be.nisc.sandbox</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -253,16 +265,12 @@
         <option value="$PROJECT_DIR$/editor/src/main/java/be/nisc/modelmappertools/editor/gui/plugins/ClassPicker.java" />
         <option value="$PROJECT_DIR$/editor/src/main/java/be/nisc/modelmappertools/editor/manager/FieldInfo.java" />
         <option value="$PROJECT_DIR$/editor/src/main/java/be/nisc/modelmappertools/editor/gui/PropertyBox.java" />
-        <option value="$PROJECT_DIR$/editor/src/main/java/be/nisc/modelmappertools/editor/gui/Editor.java" />
-        <option value="$PROJECT_DIR$/api/src/main/java/be/nisc/modelmappertools/api/FieldMapping.java" />
-        <option value="$PROJECT_DIR$/editor/src/main/java/be/nisc/modelmappertools/editor/manager/MappingManager.java" />
         <option value="$PROJECT_DIR$/editor/src/main/resources/mappings.json" />
         <option value="$PROJECT_DIR$/editor/src/main/java/be/nisc/modelmappertools/editor/A.java" />
         <option value="$PROJECT_DIR$/maven-plugin/pom.xml" />
         <option value="$PROJECT_DIR$/maven-plugin/src/main/java/be/nisc/modelmappertools/maven/MappingGeneratorPlugin.java" />
         <option value="$PROJECT_DIR$/maven-plugin/src/test/java/be/nisc/modelmappertools/maven/testclasses/C.java" />
         <option value="$PROJECT_DIR$/editor/src/main/java/be/nisc/modelmappertools/editor/D.java" />
-        <option value="$PROJECT_DIR$/editor/src/main/java/be/nisc/modelmappertools/editor/gui/Workspace.java" />
         <option value="$PROJECT_DIR$/maven-plugin/src/main/java/be/nisc/modelmappertools/maven/MappingGenerator.java" />
         <option value="$PROJECT_DIR$/maven-plugin/src/test/java/be/nisc/modelmappertools/maven/testclasses/A.java" />
         <option value="$PROJECT_DIR$/maven-plugin/src/test/java/be/nisc/modelmappertools/maven/testclasses/B.java" />
@@ -270,6 +278,23 @@
         <option value="$PROJECT_DIR$/maven-plugin/src/test/resources/mappings.json" />
         <option value="$PROJECT_DIR$/maven-plugin/src/test/java/be/nisc/modelmappertools/maven/MappingGeneratorPluginTest.java" />
         <option value="$PROJECT_DIR$/maven-plugin/src/test/java/be/nisc/modelmappertools/maven/testclasses/MyConverter.java" />
+        <option value="$PROJECT_DIR$/editor/src/main/java/be/nisc/modelmappertools/editor/test/A.java" />
+        <option value="$PROJECT_DIR$/editor/src/main/java/be/nisc/modelmappertools/editor/InvocationUtils.java" />
+        <option value="$PROJECT_DIR$/api/src/main/java/be/nisc/modelmappertools/api/MappingRegistrar.java" />
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/editor/src/main/java/be/nisc/modelmappertools/editor/manager/InvocationUtils.java" />
+        <option value="$PROJECT_DIR$/api/src/main/java/be/nisc/modelmappertools/api/FieldMapping.java" />
+        <option value="$PROJECT_DIR$/editor/src/main/java/be/nisc/modelmappertools/editor/gui/Editor.java" />
+        <option value="$PROJECT_DIR$/editor/pom.xml" />
+        <option value="$PROJECT_DIR$/editor/src/main/java/be/nisc/modelmappertools/editor/gui/Workspace.java" />
+        <option value="$PROJECT_DIR$/api/src/main/java/be/nisc/modelmappertools/api/ModelMapperMappings.java" />
+        <option value="$PROJECT_DIR$/editor/src/main/java/be/nisc/modelmappertools/editor/api/FieldMapping.java" />
+        <option value="$PROJECT_DIR$/editor/src/main/java/be/nisc/modelmappertools/editor/manager/MappingManager.java" />
+        <option value="$PROJECT_DIR$/editor/src/main/java/be/nisc/modelmappertools/editor/test/AToBMapping.java" />
+        <option value="$PROJECT_DIR$/.gitignore" />
+        <option value="$PROJECT_DIR$/editor/src/main/java/be/nisc/modelmappertools/editor/manager/MappingClassGenerator.java" />
+        <option value="$PROJECT_DIR$/editor/src/main/java/be/nisc/modelmappertools/editor/test/ModelMapperMappings.java" />
+        <option value="$PROJECT_DIR$/../sandbox/main/src/main/java/be/nisc/sandbox/ModelMapperMappings.java" />
       </list>
     </option>
   </component>
@@ -320,6 +345,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -335,36 +362,6 @@
             <path>
               <item name="mmtools" type="b2602c69:ProjectViewProjectNode" />
               <item name="mmtools" type="462c0819:PsiDirectoryNode" />
-              <item name="api" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="mmtools" type="b2602c69:ProjectViewProjectNode" />
-              <item name="mmtools" type="462c0819:PsiDirectoryNode" />
-              <item name="api" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="mmtools" type="b2602c69:ProjectViewProjectNode" />
-              <item name="mmtools" type="462c0819:PsiDirectoryNode" />
-              <item name="api" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="mmtools" type="b2602c69:ProjectViewProjectNode" />
-              <item name="mmtools" type="462c0819:PsiDirectoryNode" />
-              <item name="api" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="api" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="mmtools" type="b2602c69:ProjectViewProjectNode" />
-              <item name="mmtools" type="462c0819:PsiDirectoryNode" />
               <item name="editor" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -396,6 +393,16 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="editor" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="mmtools" type="b2602c69:ProjectViewProjectNode" />
+              <item name="mmtools" type="462c0819:PsiDirectoryNode" />
+              <item name="editor" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="editor" type="462c0819:PsiDirectoryNode" />
+              <item name="api" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="mmtools" type="b2602c69:ProjectViewProjectNode" />
@@ -406,28 +413,6 @@
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="editor" type="462c0819:PsiDirectoryNode" />
               <item name="gui" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="mmtools" type="b2602c69:ProjectViewProjectNode" />
-              <item name="mmtools" type="462c0819:PsiDirectoryNode" />
-              <item name="editor" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="editor" type="462c0819:PsiDirectoryNode" />
-              <item name="gui" type="462c0819:PsiDirectoryNode" />
-              <item name="dialog" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="mmtools" type="b2602c69:ProjectViewProjectNode" />
-              <item name="mmtools" type="462c0819:PsiDirectoryNode" />
-              <item name="editor" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="editor" type="462c0819:PsiDirectoryNode" />
-              <item name="gui" type="462c0819:PsiDirectoryNode" />
-              <item name="plugins" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="mmtools" type="b2602c69:ProjectViewProjectNode" />
@@ -445,22 +430,22 @@
               <item name="editor" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="editor" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
       <pane id="AndroidView" />
-      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="SearchEverywhereHistoryKey" value="TypeMapImp&#9;PSI&#9;JAVA://org.modelmapper.internal.TypeMapImpl&#10;TypeMapImpl&#9;PSI&#9;JAVA://org.modelmapper.internal.TypeMapImpl" />
+    <property name="SearchEverywhereHistoryKey" value="File&#9;PSI&#9;JAVA://java.io.File&#10;TypeMapImp&#9;PSI&#9;JAVA://org.modelmapper.internal.TypeMapImpl&#10;TypeMapImpl&#9;PSI&#9;JAVA://org.modelmapper.internal.TypeMapImpl" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../git/bin/git.exe" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../sandbox/pom.xml" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="project.structure.last.edited" value="SDKs" />
@@ -470,6 +455,8 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="F:\Dev\Java\Projects\mmtools\api" />
+      <recent name="F:\Dev\Java\Projects\mmtools\editor\src\main\java\be\nisc\modelmappertools\editor\test" />
       <recent name="F:\Dev\Java\Projects\mmtools\maven-plugin\src\test\resources" />
       <recent name="F:\Dev\Java\Projects\mmtools\editor\src\main\java\be\nisc\modelmappertools\editor" />
       <recent name="F:\Dev\Java\Projects\mmtools\maven-plugin\src\test\java\be\nisc\modelmappertools\maven\testclasses" />
@@ -487,7 +474,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.MappingGeneratorPluginTest">
+  <component name="RunManager" selected="Application.Workspace">
     <configuration name="Workspace" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="be.nisc.modelmappertools.editor.gui.Workspace" />
       <module name="modelmapper-tools-editor" />
@@ -593,9 +580,9 @@
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Workspace" />
         <item itemvalue="JUnit.MappingGeneratorPluginTest" />
         <item itemvalue="JUnit.MappingGeneratorPluginTest.testMappings" />
-        <item itemvalue="Application.Workspace" />
       </list>
     </recent_temporary>
   </component>
@@ -610,8 +597,19 @@
       <option name="presentableId" value="Default" />
       <updated>1546541092426</updated>
       <workItem from="1546541094727" duration="2157000" />
-      <workItem from="1546626088781" duration="17492000" />
+      <workItem from="1546626088781" duration="26827000" />
+      <workItem from="1546882282488" duration="2805000" />
+      <workItem from="1547148805184" duration="1686000" />
+      <workItem from="1547287373463" duration="599000" />
     </task>
+    <task id="LOCAL-00001" summary="Before refactor">
+      <created>1546777611089</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1546777611089</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -647,41 +645,42 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="19649000" />
+    <option name="totallyTimeSpent" value="34074000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
-      <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.39010417" side_tool="true" visible="true" weight="0.2688629" />
-      <window_info anchor="right" id="Maven Projects" order="3" visible="true" weight="0.12083333" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="right" id="Palette&#9;" order="3" />
+      <window_info id="Image Layers" order="2" />
+      <window_info anchor="right" id="Capture Analysis" order="3" />
+      <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.39427084" side_tool="true" visible="true" weight="0.20616366" />
+      <window_info anchor="right" id="Maven Projects" order="3" visible="true" weight="0.083333336" />
       <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
-      <window_info anchor="right" id="CDI" order="3" />
+      <window_info anchor="bottom" id="Version Control" order="7" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.60572916" weight="0.21997875" />
+      <window_info anchor="bottom" id="Terminal" order="7" />
       <window_info id="Capture Tool" order="2" />
       <window_info id="Designer" order="2" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.18958333" />
       <window_info anchor="right" id="Database" order="3" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info id="UI Designer" order="2" />
-      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.49739584" weight="0.33687568" />
-      <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Messages" order="7" sideWeight="0.4984375" weight="0.32943678" />
-      <window_info anchor="right" id="Palette&#9;" order="3" />
-      <window_info id="Image Layers" order="2" />
-      <window_info anchor="bottom" id="Java Enterprise" order="7" />
-      <window_info anchor="right" id="Capture Analysis" order="3" />
-      <window_info anchor="bottom" id="Version Control" order="7" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.6098958" visible="true" weight="0.2688629" />
-      <window_info anchor="bottom" id="Terminal" order="7" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.26302084" />
-      <window_info anchor="bottom" id="Find" order="1" sideWeight="0.49947917" weight="0.32943678" />
       <window_info anchor="right" id="Theme Preview" order="3" />
       <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.49375" weight="0.32306057" />
+      <window_info anchor="bottom" id="Messages" order="7" sideWeight="0.49791667" weight="0.32943678" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="right" id="CDI" order="3" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="bottom" id="Java Enterprise" order="7" />
+      <window_info anchor="bottom" id="Find" order="1" sideWeight="0.4984375" weight="0.32943678" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -690,142 +689,75 @@
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
   </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Before refactor" />
+    <option name="LAST_COMMIT_MESSAGE" value="Before refactor" />
+  </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="15" />
+      <option name="time" value="28" />
     </breakpoint-manager>
   </component>
   <component name="debuggerHistoryManager">
     <expressions id="evaluateExpression">
       <expression>
-        <expression-string>modelMapper</expression-string>
+        <expression-string>((PropertyMappingImpl) propertyMap).getLastSourceProperty().getInitialType()</expression-string>
+        <language-id>JAVA</language-id>
+        <custom-info>org.modelmapper.internal.PropertyMappingImpl</custom-info>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>((PropertyMappingImpl) propertyMap).getLastSourceProperty()</expression-string>
+        <language-id>JAVA</language-id>
+        <custom-info>org.modelmapper.internal.PropertyMappingImpl</custom-info>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>propertyMap</expression-string>
         <language-id>JAVA</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
       <expression>
-        <expression-string>modelMapper.getClass()</expression-string>
+        <expression-string>model.getAllTypes().iterator().next().getPackage().getQualifiedName()</expression-string>
+        <language-id>JAVA</language-id>
+        <custom-info>spoon.support.compiler.jdt.JDTBasedSpoonCompiler</custom-info>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>model.getAllTypes().iterator().next().getPackage()</expression-string>
+        <language-id>JAVA</language-id>
+        <custom-info>spoon.support.compiler.jdt.JDTBasedSpoonCompiler</custom-info>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>model.getAllTypes().iterator().next()</expression-string>
+        <language-id>JAVA</language-id>
+        <custom-info>spoon.support.compiler.jdt.JDTBasedSpoonCompiler</custom-info>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>model.getAllTypes()</expression-string>
+        <language-id>JAVA</language-id>
+        <custom-info>spoon.support.compiler.jdt.JDTBasedSpoonCompiler</custom-info>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>javaFile.exists()</expression-string>
         <language-id>JAVA</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
       <expression>
-        <expression-string>new File(&quot;target/temp/mappingSources/be/nisc/modelmappertools/maven/test/ModelMapperMappings.class&quot;).exists()</expression-string>
-        <language-id>JAVA</language-id>
-        <evaluation-mode>EXPRESSION</evaluation-mode>
-      </expression>
-      <expression>
-        <expression-string>target.getClass().getInterfaces()</expression-string>
+        <expression-string>javaFile.getPath()</expression-string>
         <language-id>JAVA</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
     </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/editor/src/main/java/be/nisc/modelmappertools/editor/gui/Workspace.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="442">
-          <caret line="39" column="11" lean-forward="true" selection-start-line="39" selection-start-column="11" selection-end-line="39" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/api/src/main/java/be/nisc/modelmappertools/api/ClassMapping.java">
+    <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="34">
-          <caret line="2" lean-forward="true" selection-start-line="2" selection-end-line="2" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/editor/src/main/java/be/nisc/modelmappertools/editor/gui/Editor.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="21" column="13" selection-start-line="21" selection-start-column="13" selection-end-line="21" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/modelmapper/modelmapper/2.3.0/modelmapper-2.3.0.jar!/org/modelmapper/TypeMap.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="14" column="17" selection-start-line="14" selection-start-column="17" selection-end-line="14" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/editor/src/main/java/be/nisc/modelmappertools/editor/gui/dialog/SetConverterDialog.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="295">
-          <caret line="20" column="99" selection-start-line="20" selection-start-column="99" selection-end-line="20" selection-end-column="99" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#373#374#0" expanded="true" />
-            <element signature="e#419#420#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/modelmapper/modelmapper/2.3.0/modelmapper-2.3.0.jar!/org/modelmapper/internal/TypeMapImpl.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="35" column="39" selection-start-line="35" selection-start-column="39" selection-end-line="35" selection-end-column="39" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_191/src.zip!/javax/swing/JOptionPane.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="5296">
-          <caret line="870" lean-forward="true" selection-start-line="870" selection-end-line="870" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_191/src.zip!/java/awt/Window.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="525">
-          <caret line="800" column="16" selection-start-line="800" selection-start-column="16" selection-end-line="800" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_191/src.zip!/java/awt/Component.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="219">
-          <caret line="2180" column="16" selection-start-line="2180" selection-start-column="16" selection-end-line="2180" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/api/src/main/java/be/nisc/modelmappertools/api/ClassMapping.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="49" selection-start-line="5" selection-start-column="49" selection-end-line="5" selection-end-column="49" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/editor/src/main/java/be/nisc/modelmappertools/editor/gui/dialog/AbstractClassChooserDialog.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/editor/src/main/java/be/nisc/modelmappertools/editor/gui/dialog/NewMappingDialog.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="19" column="43" selection-start-line="19" selection-start-column="38" selection-end-line="19" selection-end-column="43" />
-          <folding>
-            <element signature="e#422#423#0" expanded="true" />
-            <element signature="e#468#469#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/editor/src/main/java/be/nisc/modelmappertools/editor/gui/MappingConnector.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" column="53" selection-start-line="6" selection-start-column="53" selection-end-line="6" selection-end-column="53" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+          <caret line="2" column="8" selection-start-line="2" selection-start-column="8" selection-end-line="2" selection-end-column="8" />
         </state>
       </provider>
     </entry>
@@ -833,25 +765,8 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="247">
           <caret line="269" column="30" selection-start-line="269" selection-start-column="24" selection-end-line="269" selection-end-column="30" />
-          <folding>
-            <element signature="e#5565#5566#0" expanded="true" />
-            <element signature="e#5596#5597#0" expanded="true" />
-          </folding>
         </state>
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/editor/src/main/java/be/nisc/modelmappertools/editor/manager/FieldInfo.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="15" column="37" selection-start-line="15" selection-start-column="37" selection-end-line="15" selection-end-column="37" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/api/pom.xml">
-      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/editor/src/main/java/be/nisc/modelmappertools/editor/gui/plugins/ClassPicker.java">
       <provider selected="true" editor-type-id="text-editor">
@@ -860,20 +775,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/editor/src/main/java/be/nisc/modelmappertools/editor/gui/plugins/SaveHandler.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="17" selection-start-line="2" selection-start-column="17" selection-end-line="2" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/editor/src/main/java/be/nisc/modelmappertools/editor/gui/plugins/SaveHandler.java" />
     <entry file="file://$PROJECT_DIR$/editor/src/main/java/be/nisc/modelmappertools/editor/gui/dialog/ButtonChoiceDialog.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="517">
           <caret line="34" column="31" selection-start-line="34" selection-start-column="31" selection-end-line="34" selection-end-column="31" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -881,116 +787,15 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="153">
           <caret line="9" column="29" selection-start-line="9" selection-start-column="29" selection-end-line="9" selection-end-column="29" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#749#750#0" expanded="true" />
-            <element signature="e#782#783#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/api/src/main/java/be/nisc/modelmappertools/api/FieldMapping.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="425">
-          <caret line="25" column="5" selection-start-line="25" selection-start-column="5" selection-end-line="25" selection-end-column="5" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#671#672#0" expanded="true" />
-            <element signature="e#724#725#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/editor/src/main/java/be/nisc/modelmappertools/editor/C.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/modelmapper-tools-master.iml">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/maven-plugin/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="587">
-          <caret line="59" column="29" selection-start-line="59" selection-start-column="29" selection-end-line="59" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/maven-plugin/src/test/java/be/nisc/modelmappertools/maven/testdata.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="21" selection-start-line="2" selection-start-column="21" selection-end-line="2" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/maven-plugin/src/test/java/be/nisc/modelmappertools/maven/testclasses/C.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/editor/src/main/java/be/nisc/modelmappertools/editor/A.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="1" selection-start-line="1" selection-end-line="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/editor/src/main/java/be/nisc/modelmappertools/editor/B.java">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/editor/src/main/java/be/nisc/modelmappertools/editor/D.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="20" selection-start-line="5" selection-start-column="20" selection-end-line="5" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/editor/src/main/java/be/nisc/modelmappertools/editor/gui/Workspace.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="522">
-          <caret line="174" column="47" selection-start-line="174" selection-start-column="47" selection-end-line="174" selection-end-column="47" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/maven-plugin/src/main/java/be/nisc/modelmappertools/maven/MappingGeneratorPlugin.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="229">
-          <caret line="55" selection-start-line="55" selection-end-line="55" />
-          <folding>
-            <element signature="e#2330#2331#0" expanded="true" />
-            <element signature="e#2365#2366#0" expanded="true" />
-            <element signature="e#2419#2420#0" expanded="true" />
-            <element signature="e#2467#2468#0" expanded="true" />
-            <element signature="e#2504#2505#0" expanded="true" />
-            <element signature="e#2539#2540#0" expanded="true" />
-            <element signature="e#2593#2594#0" expanded="true" />
-            <element signature="e#2641#2642#0" expanded="true" />
-            <element signature="e#2685#2686#0" expanded="true" />
-            <element signature="e#2725#2726#0" expanded="true" />
-            <element signature="e#2791#2792#0" expanded="true" />
-            <element signature="e#2849#2850#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/maven-plugin/src/main/java/be/nisc/modelmappertools/maven/MappingGenerator.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="298">
-          <caret line="149" column="86" selection-start-line="149" selection-start-column="86" selection-end-line="149" selection-end-column="86" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/editor/src/main/resources/mappings.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="759" selection-start-column="759" selection-end-column="759" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/editor/src/main/java/be/nisc/modelmappertools/editor/C.java" />
+    <entry file="file://$PROJECT_DIR$/maven-plugin/src/test/java/be/nisc/modelmappertools/maven/testdata.java" />
+    <entry file="file://$PROJECT_DIR$/maven-plugin/src/test/java/be/nisc/modelmappertools/maven/testclasses/C.java" />
+    <entry file="file://$PROJECT_DIR$/editor/src/main/java/be/nisc/modelmappertools/editor/A.java" />
+    <entry file="file://$PROJECT_DIR$/editor/src/main/java/be/nisc/modelmappertools/editor/D.java" />
+    <entry file="file://$PROJECT_DIR$/editor/src/main/resources/mappings.json" />
     <entry file="jar://C:/Program Files/Java/jdk1.8.0_191/src.zip!/javax/tools/JavaCompiler.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="419">
@@ -998,67 +803,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/maven-plugin/target/temp/mappingSources/be/nisc/modelmappertools/maven/test/ModelMapperMappings.class">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/maven-plugin/target/classes/be/nisc/modelmappertools/maven/MappingGenerator.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <folding>
-            <element signature="e#0#6953#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/maven-plugin/src/test/java/be/nisc/modelmappertools/maven/testclasses/B.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="23" column="27" selection-start-line="23" selection-start-column="27" selection-end-line="23" selection-end-column="27" />
-          <folding>
-            <element signature="e#153#154#0" expanded="true" />
-            <element signature="e#177#178#0" expanded="true" />
-            <element signature="e#208#209#0" expanded="true" />
-            <element signature="e#234#235#0" expanded="true" />
-            <element signature="e#394#395#0" expanded="true" />
-            <element signature="e#429#430#0" expanded="true" />
-            <element signature="e#455#456#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/maven-plugin/src/test/java/be/nisc/modelmappertools/maven/testclasses/D.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="23" column="26" selection-start-line="23" selection-start-column="26" selection-end-line="23" selection-end-column="26" />
-          <folding>
-            <element signature="e#460#461#0" expanded="true" />
-            <element signature="e#499#500#0" expanded="true" />
-            <element signature="e#535#536#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/maven-plugin/src/test/resources/mappings.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="475" selection-start-column="475" selection-end-column="475" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/maven-plugin/target/temp/mappingSources/be/nisc/modelmappertools/maven/test/ModelMapperMappings.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="194">
-          <caret line="27" column="14" selection-start-line="27" selection-start-column="14" selection-end-line="27" selection-end-column="14" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1351#1352#0" expanded="true" />
-            <element signature="e#1385#1386#0" expanded="true" />
-            <element signature="e#1500#1501#0" expanded="true" />
-            <element signature="e#1551#1552#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/maven-plugin/src/test/java/be/nisc/modelmappertools/maven/testclasses/B.java" />
+    <entry file="file://$PROJECT_DIR$/maven-plugin/src/test/java/be/nisc/modelmappertools/maven/testclasses/D.java" />
+    <entry file="file://$PROJECT_DIR$/maven-plugin/src/test/resources/mappings.json" />
+    <entry file="file://$PROJECT_DIR$/maven-plugin/target/temp/mappingSources/be/nisc/modelmappertools/maven/test/ModelMapperMappings.java" />
     <entry file="jar://$MAVEN_REPOSITORY$/org/modelmapper/modelmapper/2.3.0/modelmapper-2.3.0.jar!/org/modelmapper/ModelMapper.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="217">
@@ -1066,61 +814,224 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/maven-plugin/src/test/java/be/nisc/modelmappertools/maven/testclasses/A.java">
+    <entry file="file://$PROJECT_DIR$/maven-plugin/src/test/java/be/nisc/modelmappertools/maven/testclasses/A.java" />
+    <entry file="file://$PROJECT_DIR$/maven-plugin/src/test/java/be/nisc/modelmappertools/maven/testclasses/MyConverter.java" />
+    <entry file="file://$PROJECT_DIR$/maven-plugin/src/test/java/be/nisc/modelmappertools/maven/MappingGeneratorPluginTest.java" />
+    <entry file="file://$PROJECT_DIR$/editor/src/main/java/be/nisc/modelmappertools/editor/test/C.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="476">
-          <caret line="32" column="28" selection-start-line="32" selection-start-column="28" selection-end-line="32" selection-end-column="28" />
-          <folding>
-            <element signature="e#297#298#0" expanded="true" />
-            <element signature="e#321#322#0" expanded="true" />
-            <element signature="e#355#356#0" expanded="true" />
-            <element signature="e#381#382#0" expanded="true" />
-            <element signature="e#409#410#0" expanded="true" />
-            <element signature="e#433#434#0" expanded="true" />
-            <element signature="e#467#468#0" expanded="true" />
-            <element signature="e#493#494#0" expanded="true" />
-            <element signature="e#555#556#0" expanded="true" />
-            <element signature="e#598#599#0" expanded="true" />
-            <element signature="e#638#639#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="34">
+          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/maven-plugin/src/test/java/be/nisc/modelmappertools/maven/testclasses/MyConverter.java">
+    <entry file="file://$PROJECT_DIR$/editor/src/main/java/be/nisc/modelmappertools/editor/test/A.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" column="36" selection-start-line="8" selection-start-column="36" selection-end-line="8" selection-end-column="36" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="34">
+          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/maven-plugin/src/test/java/be/nisc/modelmappertools/maven/MappingGeneratorPluginTest.java">
+    <entry file="file://$PROJECT_DIR$/editor/src/main/java/be/nisc/modelmappertools/editor/test/MyLittleConverter.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="726">
-          <caret line="70" column="66" selection-start-line="70" selection-start-column="66" selection-end-line="70" selection-end-column="66" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="68">
+          <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/api/src/main/java/be/nisc/modelmappertools/api/MappingRegistrar.java" />
+    <entry file="file://$PROJECT_DIR$/maven-plugin/src/main/java/be/nisc/modelmappertools/maven/MappingGeneratorPlugin.java" />
+    <entry file="file://$PROJECT_DIR$/maven-plugin/src/main/java/be/nisc/modelmappertools/maven/MappingGenerator.java" />
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="18" column="31" selection-start-line="18" selection-start-column="31" selection-end-line="18" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/editor/src/main/java/be/nisc/modelmappertools/editor/manager/FieldInfo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="12" column="11" selection-start-line="12" selection-start-column="11" selection-end-line="12" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/editor/src/main/java/be/nisc/modelmappertools/editor/manager/InvocationUtils.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="697">
+          <caret line="47" selection-start-line="47" selection-end-line="47" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/maven-plugin/pom.xml" />
+    <entry file="jar://$MAVEN_REPOSITORY$/com/squareup/javapoet/1.11.1/javapoet-1.11.1.jar!/com/squareup/javapoet/JavaFile.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="61" column="30" selection-start-line="61" selection-start-column="30" selection-end-line="61" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_191/src.zip!/java/io/File.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="148" column="13" selection-start-line="148" selection-start-column="13" selection-end-line="148" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_191/src.zip!/java/io/Writer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="202">
+          <caret line="49" column="40" selection-start-line="49" selection-start-column="40" selection-end-line="49" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_191/src.zip!/java/lang/Appendable.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="453">
+          <caret line="50" column="22" selection-start-line="50" selection-start-column="22" selection-end-line="50" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/editor/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="549">
+          <caret line="46" column="21" selection-start-line="46" selection-start-column="21" selection-end-line="46" selection-end-column="21" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/editor/src/main/java/be/nisc/modelmappertools/editor/gui/Editor.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="223" column="141" selection-start-line="223" selection-start-column="141" selection-end-line="223" selection-end-column="141" />
+        <state relative-caret-position="942">
+          <caret line="188" column="24" selection-start-line="188" selection-start-column="24" selection-end-line="188" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/editor/src/main/java/be/nisc/modelmappertools/editor/api/ClassMapping.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/editor/src/main/java/be/nisc/modelmappertools/editor/test/B.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/editor/src/main/java/be/nisc/modelmappertools/editor/test/AToBMapping.java" />
+    <entry file="jar://$MAVEN_REPOSITORY$/org/modelmapper/modelmapper/2.3.0/modelmapper-2.3.0.jar!/org/modelmapper/builder/ReferenceMapExpression.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="13" column="30" selection-start-line="13" selection-start-column="30" selection-end-line="13" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/modelmapper/modelmapper/2.3.0/modelmapper-2.3.0.jar!/org/modelmapper/spi/DestinationSetter.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="7" column="17" selection-start-line="7" selection-start-column="17" selection-end-line="7" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/api/src/main/java/be/nisc/modelmappertools/api/ModelMapperMappings.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" column="4" selection-start-line="5" selection-start-column="4" selection-end-line="5" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/editor/src/main/java/be/nisc/modelmappertools/editor/api/FieldMapping.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="8" column="34" selection-start-line="8" selection-start-column="18" selection-end-line="8" selection-end-column="34" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/editor/src/main/java/be/nisc/modelmappertools/editor/gui/Workspace.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2057">
+          <caret line="129" column="9" selection-start-line="129" selection-start-column="9" selection-end-line="129" selection-end-column="9" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/editor/src/main/java/be/nisc/modelmappertools/editor/test/D.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="11" column="16" selection-start-line="11" selection-start-column="16" selection-end-line="11" selection-end-column="16" />
+          <folding>
+            <element signature="e#236#237#0" expanded="true" />
+            <element signature="e#270#271#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="8" selection-start-line="2" selection-start-column="8" selection-end-line="2" selection-end-column="8" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/editor/src/main/java/be/nisc/modelmappertools/editor/manager/MappingManager.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="30" column="37" selection-start-line="30" selection-start-column="26" selection-end-line="30" selection-end-column="37" />
+        <state relative-caret-position="1173">
+          <caret line="77" selection-start-line="77" selection-end-line="77" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#3997#3998#0" expanded="true" />
-            <element signature="e#4074#4075#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/editor/src/main/java/be/nisc/modelmappertools/editor/test/ModelMapperMappings.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="510">
+          <caret line="39" column="88" selection-start-line="39" selection-start-column="88" selection-end-line="39" selection-end-column="88" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1138#1139#0" expanded="true" />
+            <element signature="e#1174#1175#0" expanded="true" />
+            <element signature="e#1277#1278#0" expanded="true" />
+            <element signature="e#1315#1316#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/editor/src/main/java/be/nisc/modelmappertools/editor/manager/MappingClassGenerator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1683">
+          <caret line="121" column="44" selection-start-line="121" selection-start-column="44" selection-end-line="121" selection-end-column="44" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../sandbox/main/src/main/java/be/nisc/sandbox/ModelMapperMappings.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="23" selection-start-column="8" selection-end-column="23" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#409#410#0" expanded="true" />
+            <element signature="e#466#467#0" expanded="true" />
+            <element signature="e#1194#1195#0" expanded="true" />
+            <element signature="e#1230#1231#0" expanded="true" />
+            <element signature="e#1333#1334#0" expanded="true" />
+            <element signature="e#1371#1372#0" expanded="true" />
+            <element signature="e#1512#1513#0" expanded="true" />
+            <element signature="e#1551#1552#0" expanded="true" />
+            <element signature="e#1654#1655#0" expanded="true" />
+            <element signature="e#1692#1693#0" expanded="true" />
           </folding>
         </state>
       </provider>
