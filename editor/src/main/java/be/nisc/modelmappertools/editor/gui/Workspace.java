@@ -35,7 +35,7 @@ public class Workspace extends JPanel {
                 classMappings.add(editor.getMapping());
             }
 
-            new MappingClassGenerator(mappingClassLoader).write(outputFile, classMappings);
+            new MappingClassGenerator(mappingClassLoader).write(outputFile, null, classMappings);
         });
 
         JButton addButton = new JButton();

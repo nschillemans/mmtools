@@ -4,6 +4,7 @@ import be.nisc.modelmappertools.editor.api.ClassMapping;
 import be.nisc.modelmappertools.editor.api.FieldMapping;
 import be.nisc.modelmappertools.editor.test.ModelMapperMappings;
 import com.squareup.javapoet.*;
+import org.apache.commons.io.FileUtils;
 import org.modelmapper.ModelMapper;
 import org.modelmapper.TypeMap;
 import org.modelmapper.spi.DestinationSetter;
@@ -28,18 +29,21 @@ public class MappingClassGenerator {
         this.classLoader = classLoader;
     }
 
-    public void write(File javaFile, List<ClassMapping> classMappings) {
+    public void write(File javaFile, String packageName, List<ClassMapping> classMappings) {
 
-        Launcher launcher = new Launcher();
-        launcher.addInputResource(javaFile.getAbsolutePath());
-        CtModel model = launcher.buildModel();
+        // Find target package from given file if exists
+        if (javaFile.exists()) {
+            Launcher launcher = new Launcher();
+            launcher.addInputResource(javaFile.getAbsolutePath());
+            CtModel model = launcher.buildModel();
 
-        if (model.getAllTypes().size() == 0) {
-            throw new RuntimeException(String.format("Could not parse java source file [%s]", javaFile.getAbsolutePath()));
+            if (model.getAllTypes().size() == 0) {
+                throw new RuntimeException(String.format("Could not parse java source file [%s]", javaFile.getAbsolutePath()));
+            }
+
+            CtType currentClass = model.getAllTypes().iterator().next();
+            packageName = currentClass.getPackage().getQualifiedName();
         }
-
-        CtType currentClass = model.getAllTypes().iterator().next();
-        String packageName = currentClass.getPackage().getQualifiedName();
 
         TypeSpec.Builder output = TypeSpec.classBuilder("ModelMapperMappings")
                 .addSuperinterface(ClassName.get(be.nisc.modelmappertools.api.ModelMapperMappings.class))
